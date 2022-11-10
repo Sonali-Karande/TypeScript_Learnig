@@ -1,0 +1,46 @@
+console.log("Example of direction using enum");
+var CardinalDirections;
+(function (CardinalDirections) {
+    CardinalDirections[CardinalDirections["North"] = 0] = "North";
+    CardinalDirections[CardinalDirections["East"] = 1] = "East";
+    CardinalDirections[CardinalDirections["South"] = 2] = "South";
+    CardinalDirections[CardinalDirections["West"] = 3] = "West";
+})(CardinalDirections || (CardinalDirections = {}));
+;
+console.log(CardinalDirections[0], CardinalDirections.North);
+console.log(CardinalDirections[1], CardinalDirections.East);
+console.log(CardinalDirections[2], CardinalDirections.South);
+console.log(CardinalDirections[3], CardinalDirections.West);
+console.log(CardinalDirections);
+console.log("Example of Days of week using enum");
+var Days;
+(function (Days) {
+    Days[Days["SUNDAY"] = 0] = "SUNDAY";
+    Days[Days["MONDAY"] = 1] = "MONDAY";
+    Days[Days["TUESDAY"] = 2] = "TUESDAY";
+    Days[Days["WEDNESDAY"] = 3] = "WEDNESDAY";
+    Days[Days["THURSDAY"] = 4] = "THURSDAY";
+    Days[Days["FRIDAY"] = 5] = "FRIDAY";
+    Days[Days["SATURDAYS"] = 6] = "SATURDAYS";
+})(Days || (Days = {}));
+console.log(Days);
+console.log(Days[0], Days.SUNDAY);
+console.log(Days[1], Days.MONDAY);
+console.log(Days[2], Days.TUESDAY);
+console.log(Days[3], Days.WEDNESDAY);
+console.log(Days[4], Days.THURSDAY);
+console.log(Days[5], Days.FRIDAY);
+console.log(Days[6], Days.SATURDAYS);
+console.log("Example of Status using enum");
+var AppStatus;
+(function (AppStatus) {
+    AppStatus[AppStatus["ACTIVE"] = 0] = "ACTIVE";
+    AppStatus[AppStatus["INACTIVE"] = 1] = "INACTIVE";
+    AppStatus[AppStatus["ONHOLD"] = 2] = "ONHOLD";
+    AppStatus[AppStatus["ONSTOP"] = 3] = "ONSTOP";
+})(AppStatus || (AppStatus = {}));
+console.log(AppStatus);
+console.log(AppStatus[0], AppStatus.ACTIVE);
+console.log(AppStatus[1], AppStatus.INACTIVE);
+console.log(AppStatus[2], AppStatus.ONHOLD);
+console.log(AppStatus[3], AppStatus.ONSTOP);
