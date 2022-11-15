@@ -19,6 +19,7 @@ console.log("Traversing using for...in loop");
 
 for (const key in employee) {
 
-    console.log(employee[key]);
+    console.log(key,employee[key]);
     
 }
+ 

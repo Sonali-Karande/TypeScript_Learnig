@@ -15,7 +15,22 @@ for (let index = 0; index < array.length; index++) {
 
     
 }
-  
+console.log("***************************************************");
+
+for (const key in array) {
+    if (Object.prototype.hasOwnProperty.call(array, key)) {
+        const element = array[key];
+        console.log(element);
+        
+    }
+}
+console.log("***************************************************");
+for (const iterator of array) {
+    console.log(iterator);
+    //console.log(array[iterator]);
+
+    
+}
         
     
 
