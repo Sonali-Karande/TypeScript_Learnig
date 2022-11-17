@@ -10,6 +10,9 @@ for (var key in emp) {
 //     console.log(str[iterator]);
 // }
 var course = ["Angular", "ReactJs", ".NET"];
+// let values: (string| number|boolean)[] = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
+// values.push(true);
+// console.log(values);
 course.push("Java");
 course.push(10);
 for (var index = 0; index < course.length; index++) {
@@ -25,28 +28,27 @@ var std = {
     fName: "Sonali",
     lName: "Karande"
 };
-var userFname = std.fName, userLname = std.lName;
+var userFname = std.fName, userLname = std.lName; //object destructuring
 //console.log(fName ,lName);
 console.log(userFname, userLname);
 console.log(std);
 var arr = [20, 30, 12, 100, 20];
 arr.splice(2, 3, 88, 99);
 console.log(arr.toString());
-function add(num1, num2) {
+function addsssss(num1, num2) {
     return num2 + num1;
 }
-console.log(add(10, 20));
-// function display(id:number,name:string,role?:string) {
-//     console.log(`ID:${id}`);
-//     console.log(`Name:${name}`);
-//     if(role!= undefined)
-//     {
-//         console.log("Role", role);
-//     }
-//     console.log(`Role:${role}`);
-// }
-// console.log(display(1,"sonali","admin"));
-// console.log(display(2,"sonali"));
+console.log(addsssss(10, 20));
+function display(id, name, role) {
+    console.log("ID:".concat(id));
+    console.log("Name:".concat(name));
+    if (role != undefined) {
+        console.log("Role", role);
+    }
+    console.log("Role:".concat(role));
+}
+console.log(display(1, "sonali", "admin"));
+console.log(display(2, "sonali"));
 function display1(id, name, role) {
     if (role === void 0) { role = "Gest user"; }
     console.log("ID:".concat(id));

@@ -12,6 +12,12 @@ for (const key in emp) {
     
 // }
 var course:any=["Angular","ReactJs",".NET"];
+// let values: (string| number|boolean)[] = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
+// values.push(true);
+// console.log(values);
+
+
+
 course.push("Java");
 course.push(10);
 for (let index = 0; index < course.length; index++) {
@@ -40,7 +46,7 @@ console.log(arr.toString());
 function addsssss(num1:number,num2:number) {
     return num2+num1;
 }
-console.log(add(10,20));
+console.log(addsssss(10,20));
 
 function display(id:number,name:string,role?:string) {
     console.log(`ID:${id}`);
