@@ -77,6 +77,7 @@ person.work();
 
 person=new Trainer("Sonali",10,"Angular");
 person.work();
+console.log("=========================================");
 
 
 
