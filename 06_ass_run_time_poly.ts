@@ -5,7 +5,6 @@ class Organizer {
     public startTime:string;
     public address:string;
     constructor( id:number, name:string) {
-        // calling parent class constructor.
         this.id=id;
         this.name=name;
     }
